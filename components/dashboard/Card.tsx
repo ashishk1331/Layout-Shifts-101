@@ -9,7 +9,7 @@ interface CardProps {
 }
 
 export default function Card({ className, id }: CardProps) {
-    const [timeElapsed, setTimeElapsed] = useState(null);
+    const [timeElapsed, setTimeElapsed] = useState<string>("");
 
     useEffect(() => {
         async function run() {

@@ -1,4 +1,4 @@
-export const fakeRequest = (upperBound: number): Promise => {
+export const fakeRequest = (upperBound: number): Promise<string> => {
 	// time should be in seconds
 	const time = Math.round(Math.random() * upperBound);
 	const millis = time * 1000;
