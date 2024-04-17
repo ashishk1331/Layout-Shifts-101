@@ -1,6 +1,6 @@
 import { Pulse, Bell, MagnifyingGlass } from "@phosphor-icons/react/dist/ssr";
 
-export default function () {
+export default function Header() {
 	return (
 		<header className="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white border-b text-sm py-2.5 sm:py-4">
 			<nav
@@ -17,14 +17,6 @@ export default function () {
 					</a>
 				</div>
 				<div className="w-full flex items-center justify-end ms-auto sm:justify-between sm:gap-x-3 sm:order-3">
-					<div className="sm:hidden">
-						<button
-							type="button"
-							className="inline-flex flex-shrink-0 justify-center items-center gap-2 size-[38px] rounded-full font-medium bg-white text-gray-700 align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-white transition-all text-xs"
-						>
-							<MagnifyingGlass className="flex-shrink-0 size-4" />
-						</button>
-					</div>
 					<div className="hidden sm:block">
 						<label htmlFor="icon" className="sr-only">
 							Search
@@ -51,26 +43,14 @@ export default function () {
 						</button>
 						<button
 							type="button"
-							className="hs-dropdown-toggle w-[2.375rem] h-[2.375rem] inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full text-gray-500 hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none"
-							data-hs-offcanvas="#hs-offcanvas-right"
+							className="w-[2.375rem] h-[2.375rem] inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full text-gray-500 hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none"
 						>
 							<Pulse size={20} />
 						</button>
-						<div
-							className="hs-dropdown relative inline-flex"
-							data-hs-dropdown-placement="bottom-right"
-						>
-							<button
-								id="hs-dropdown-with-header"
-								type="button"
-								className="hs-dropdown-toggle w-[2.375rem] h-[2.375rem] inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-full text-gray-500 hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none"
-							>
-								<img
-									className="inline-block size-[38px] rounded-full ring-2 ring-white"
-									src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80"
-									alt="Image Description"
-								/>
-							</button>
+						<div className="relative inline-flex">
+							<div className="inline-block size-[38px] rounded-full ring-2 ring-white flex justify-around items-center bg-emerald-300 text-lg font-semibold">
+								F
+							</div>
 						</div>
 					</div>
 				</div>
