@@ -1,5 +1,5 @@
-import Header from "@/components/dashboard/Header.tsx";
-import Widgets from "@/components/dashboard/Widgets.tsx";
+import Header from "@/components/dashboard/Header";
+import Widgets from "@/components/dashboard/Widgets";
 
 export default function Page() {
   return (

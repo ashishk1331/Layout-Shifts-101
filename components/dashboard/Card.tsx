@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import { twMerge } from "tailwind-merge";
-import { fakeRequest } from "@/util/fakeRequest.ts";
+import { fakeRequest } from "@/util/fakeRequest";
 
 interface CardProps {
     className: string;
